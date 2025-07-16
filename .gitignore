@@ -207,6 +207,7 @@ credentials/
 *.bmp
 !assets/*
 !static/*
+!images/*
 
 # macOS specific
 .AppleDouble
