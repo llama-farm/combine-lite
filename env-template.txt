@@ -1,0 +1,20 @@
+# Environment Variables Template
+# Copy this file to .env and fill in your actual values
+
+# Hugging Face Configuration
+# To use Llama models, you need to:
+# 1. Create account at https://huggingface.co
+# 2. Accept Llama license at https://huggingface.co/meta-llama/Llama-3.2-1B
+# 3. Create token at https://huggingface.co/settings/tokens
+# 4. Replace YOUR_HF_TOKEN_HERE with your actual token
+
+HF_TOKEN=YOUR_HF_TOKEN_HERE
+
+# OpenAI Configuration (for data generation features)
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY_HERE
+
+# Cloudflare R2 Configuration (optional, for cloud export)
+R2_BUCKET=
+R2_ENDPOINT=
+R2_ACCESS_KEY=
+R2_SECRET_KEY= 

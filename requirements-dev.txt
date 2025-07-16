@@ -1,0 +1,11 @@
+gradio
+transformers
+peft
+datasets
+# torch - install separately with: pip install torch torchvision torchaudio
+huggingface_hub
+openai
+boto3
+python-dotenv
+# For ARM64/Apple Silicon, install PyTorch with:
+# pip install torch torchvision torchaudio 

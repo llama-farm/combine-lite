@@ -1,0 +1,32 @@
+# fly.toml app configuration file generated for llama-combine on 2025-07-16T08:35:47-05:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'llama-combine'
+primary_region = "ord"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[[vm]]
+  size = "a100-40gb"  # Or your GPU size
+
+[[mounts]]
+  source = "data"
+  destination = "/data"
+
+[http_service]
+  internal_port = 7860  # Gradio port
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = false
+  min_machines_running = 1  # Keeps at least one running to avoid cold starts
+
+[[http_service.checks]]
+  grace_period = "60s"  # Allow 60s for startup before checks
+  interval = "10s"  # Check every 10s
+  method = "GET"
+  path = "/"  # Gradio root path
+  protocol = "http"
+  timeout = "5s"  # Timeout per check
