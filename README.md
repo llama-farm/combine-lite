@@ -1,10 +1,10 @@
-# AI Model Studio
+# Llama Combine
 
 <div align="center">
   <img src="images/llama-combine.png" alt="Llama Combine" width="400">
 </div>
 
-A Gradio web application for fine-tuning language models using LoRA (Low-Rank Adaptation). Supports both local development on ARM64 machines and production deployment with CUDA GPUs.
+A Gradio web application for fine-tuning language models using LoRA (Low-Rank Adaptation). Supports both local development on ARM64 machines and, in the future, production deployment with CUDA GPUs.
 
 ## Why "Llama Combine"?
 
